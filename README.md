@@ -16,4 +16,15 @@ Remember to include the BasicDB class and set up your caching settings where you
     ];
 ```
 
+### Example Usage
+```
+// Caching
+$db->from('tbl_blogs')->where('blogStatus', 1)->cache()->all();
+
+// Disable Caching
+
+$db->from('tbl_blogs')->where('blogStatus', 1)->nocache()->all();
+
+```
+
 If you encounter a problem, please contact us at contact@bugra.work
